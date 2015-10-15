@@ -8,7 +8,7 @@
 	<%= i.seats %>
 	</section>
 <section class = "col-sm-4">
-	<%# binding.pry %>
+	
 	<%= i.name i.user_id%>
 	</section>
 
@@ -16,9 +16,7 @@
 	<%= button_to "pool"%>
 	<% end %>
 	</section>
-	
-
-
-
-
 </div>
+<br>
+<%#binding.pry %>
+<%=	 link_to "create new",new_user_post_path(current_user.id) %>
