@@ -2,4 +2,10 @@ body{
 	background-image: url("carpooling.jpg");
 	background-size: cover;
 }
-	
+.form-inline{
+	background-color: transparent;
+}
+.navbar-inverse{
+	opacity: .60;
+
+}

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'carpool/index'
+  get 'carpools/index'
 
-  root 'carpool#index'
+  root 'carpools#index'
 end
