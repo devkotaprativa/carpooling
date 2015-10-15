@@ -4,8 +4,15 @@ Rails.application.routes.draw do
   resources :users do
     resources :posts
   end
-  get 'carpools/index'
+  # get 'carpools/index'
 
-  root 'posts#index'
+  devise_scope :user do
+  authenticated :user do
+    root :to => 'posts#index'
+  end
+  unauthenticated :user do
+    root :to => 'carpools#index', as: :unauthenticated_root
 
+end
+end
 end

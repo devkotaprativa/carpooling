@@ -1,8 +1,24 @@
-<section>
+<div class = "post">
+<section class = "col-sm-4">
+
 	<% @posts.each do|i| %>
 	<%= i.departure %> 
 	<%= i.destination %>
 	<%= i.d_time %>
 	<%= i.seats %>
+	</section>
+<section class = "col-sm-4">
+	<%# binding.pry %>
+	<%= i.name i.user_id%>
+	</section>
+
+	<section class = "co-sm-4">
+	<%= button_to "pool"%>
 	<% end %>
-</section>
+	</section>
+	
+
+
+
+
+</div>

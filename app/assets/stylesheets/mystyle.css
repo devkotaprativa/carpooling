@@ -1,11 +1,16 @@
-.container-fluid{
+#container-fluid{
 	background-image: url("carpooling.jpg");
 	background-size: cover;
+	min-height: 700px;
 }
 .form-inline{
 	background-color: transparent;
 }
-.navbar-inverse{
+/*.navbar-inverse{
 	opacity: .60;
 
+}*/
+
+.post .col-sm-4{
+	text-align: center;
 }
