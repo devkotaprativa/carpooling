@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Offer Ride</h2>
+    <%= form_for [@user, @post] do |f| %>
+    <p>
+      <%= f.label :departure, placeholder: 'Start Address' %>
+      <%= f.text_field :departure %>
+    </p>
+    <p>
+      <%= f.label :destination, placeholder: 'Destination Address' %>
+      <%= f.text_field :destination %>
+    </p>
+    <p>
+      <%= f.label :seats, placeholder: 'Number of seats' %>
+      <%= f.text_field :seats %>
+    </p>
+    <p>
+      <%= f.label :date_time, placeholder: 'Date and Time' %>
+      <%= f.text_field :d_time %>
+    </p>
+    <p>
+      <%= f.button :submit %>  
+    </p>
+    <% end %>
+  </form>
+</div>
