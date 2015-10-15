@@ -1,2 +1,8 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<section>
+	<% @posts.each do|i| %>
+	<%= i.departure %> 
+	<%= i.destination %>
+	<%= i.d_time %>
+	<%= i.seats %>
+	<% end %>
+</section>
