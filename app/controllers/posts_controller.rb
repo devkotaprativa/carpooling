@@ -22,13 +22,18 @@ class PostsController < ApplicationController
     redirect_to user_posts_path
   end
 
+  
+
   def show
   end
 
   def destroy
   end
 
+  private
+
   def post_params
     params.require(:post).permit(:departure, :destination, :seats, :d_time)
   end
+
 end

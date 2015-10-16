@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
 
+  
+
+  resources :pools
   devise_for :users
   resources :users do
-    resources :posts
+       resources :posts #do
+    #   post "/pool" => "posts#pool"
+    # end
   end
   # get 'carpools/index'
 

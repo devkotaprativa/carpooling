@@ -10,12 +10,12 @@
 
 	<% @posts.each do|i| %>
 	<tr>
-			<td><%= link_to i.departure, user_post_path(i.user_id, i) %></td>
+			<td><%= i.departure %></td>
 			<td><%= i.destination %></td>
 			<td><%= i.seats %></td>
 			<td><%= i.date_time i %></td>
 			<td><%= i.name i.user_id%></td>
-			<td><%= link_to "pool" %></td>
+			<td><%= link_to "pool",user_post_pool_path(i.user_id,i.id), method: :post %></td>
 	</tr>
 		
 	
@@ -25,4 +25,4 @@
 </div>
 <br>
 <%#binding.pry %>
-<%=	 link_to "create new",new_user_post_path(current_user.id) %>
+<%=	link_to "create new",new_user_post_path(current_user.id), :class=>"btn btn-primary"  %><br>

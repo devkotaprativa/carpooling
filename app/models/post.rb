@@ -9,13 +9,15 @@ class Post < ActiveRecord::Base
  	   	name = "N/A"
  	   end
  	end
+
  	def date_time post 	 			
  			if post.d_time.present?
 	 			@datetime = post.d_time.to_s.split("U")
 	 			@datetime = @datetime.first
 	 			else
 	 			@datetime = "undefined"
-	 		end
- 				
+	 		end 				
  	end
+ 	
+
 end
