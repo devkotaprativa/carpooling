@@ -1,12 +1,13 @@
 <div class="container">
   <h2>How many seats you need?</h2>
-    <%= form_for @pool do |f| %>
-    <p>
-      <%= f.label "number of seats" %>
-      <%= f.text_field :seats %>
-    </p>
-      <%= f.button :submit %>  
-    </p>
+
+      <%= form_for @pool, url: user_post_pools_path(@post.user_id,@post.id) do |f| %>
+      <p>
+        <%= f.label "number of seats" %>
+        <%= f.text_field :seats %>
+      </p>
+        <%= f.button :submit %>  
+      </p>
     <% end %>
   </form>
 </div>

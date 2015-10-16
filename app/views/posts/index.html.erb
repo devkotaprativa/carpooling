@@ -15,7 +15,7 @@
 			<td><%= i.seats %></td>
 			<td><%= i.date_time i %></td>
 			<td><%= i.name i.user_id%></td>
-			<td><%= link_to "pool",new_pool_path %></td>
+			<td><%= link_to "pool",new_user_post_pool_path(i.user_id,i.id), :class=>"btn btn-primary"%></td>
 		</tr>	
 	<% end %>
 	</table>

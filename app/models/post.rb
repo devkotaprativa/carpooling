@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
 	belongs_to :user
-
+	has_one :pool
+	validates :departure, :destination, :seats, :d_time, presence: true
 	def name user_id
  		user = User.find_by_id(user_id)
  		if user.name.present?

@@ -2,12 +2,12 @@ Rails.application.routes.draw do
 
   
 
-  resources :pools
+  
   devise_for :users
   resources :users do
-       resources :posts #do
-    #   post "/pool" => "posts#pool"
-    # end
+    resources :posts do
+      resources :pools
+    end
   end
   # get 'carpools/index'
 
