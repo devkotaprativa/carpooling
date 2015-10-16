@@ -9,16 +9,14 @@
 	<th>status</th>
 
 	<% @posts.each do|i| %>
-	<tr>
+		<tr>
 			<td><%= i.departure %></td>
 			<td><%= i.destination %></td>
 			<td><%= i.seats %></td>
 			<td><%= i.date_time i %></td>
 			<td><%= i.name i.user_id%></td>
-			<td><%= link_to "pool",user_post_pool_path(i.user_id,i.id), method: :post %></td>
-	</tr>
-		
-	
+			<td><%= link_to "pool",new_pool_path %></td>
+		</tr>	
 	<% end %>
 	</table>
 	

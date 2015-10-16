@@ -1,2 +1,12 @@
-<h1>Pools#new</h1>
-<p>Find me in app/views/pools/new.html.erb</p>
+<div class="container">
+  <h2>How many seats you need?</h2>
+    <%= form_for @pool do |f| %>
+    <p>
+      <%= f.label "number of seats" %>
+      <%= f.text_field :seats %>
+    </p>
+      <%= f.button :submit %>  
+    </p>
+    <% end %>
+  </form>
+</div>
