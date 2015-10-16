@@ -1,21 +1,27 @@
 <div class = "post">
-<section class = "col-sm-4">
+
+<table class = "table">
+	<th>departure</th>
+	<th>destination</th>
+	<th>available seats</th>
+	<th>date time</th>
+	<th>name</th>
+	<th>status</th>
 
 	<% @posts.each do|i| %>
-	<%= i.departure %> 
-	<%= i.destination %>
-	<%= i.d_time %>
-	<%= i.seats %>
-	</section>
-<section class = "col-sm-4">
+	<tr>
+			<td><%= link_to i.departure, user_post_path(i.user_id, i) %></td>
+			<td><%= i.destination %></td>
+			<td><%= i.seats %></td>
+			<td><%= i.date_time i %></td>
+			<td><%= i.name i.user_id%></td>
+			<td><%= link_to "pool" %></td>
+	</tr>
+		
 	
-	<%= i.name i.user_id%>
-	</section>
-
-	<section class = "co-sm-4">
-	<%= button_to "pool"%>
 	<% end %>
-	</section>
+	</table>
+	
 </div>
 <br>
 <%#binding.pry %>

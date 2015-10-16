@@ -2,19 +2,19 @@
   <h2>Offer Ride</h2>
     <%= form_for [@user, @post] do |f| %>
     <p>
-      <%= f.label :departure, placeholder: 'Start Address' %>
+      <%= f.label :departure %>
       <%= f.text_field :departure %>
     </p>
     <p>
-      <%= f.label :destination, placeholder: 'Destination Address' %>
+      <%= f.label :destination %>
       <%= f.text_field :destination %>
     </p>
     <p>
-      <%= f.label :seats, placeholder: 'Number of seats' %>
+      <%= f.label :seats %>
       <%= f.text_field :seats %>
     </p>
     <p>
-      <%= f.label :date_time, placeholder: 'Date and Time' %>
+      <%= f.label :date_time %>
       <%= f.text_field :d_time %>
     </p>
     <p>

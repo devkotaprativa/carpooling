@@ -11,6 +11,13 @@
 
 }*/
 
-.post .col-sm-4{
-	text-align: center;
+.post {
+	background-color: aliceblue;
+	width: auto;
+	margin:5px auto;	
+}
+
+
+.post .table{
+
 }
